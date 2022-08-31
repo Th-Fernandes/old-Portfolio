@@ -1,0 +1,9 @@
+{
+  "brand": "#00D2DF",
+  "neutrals": {
+    "dark": "#121212",
+    "dark-200": "#151515",
+    "light": "#FFFFFF",
+    "light-gray": "#C4C4C4"
+  }
+}
