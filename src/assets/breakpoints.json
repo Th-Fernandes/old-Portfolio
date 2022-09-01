@@ -1,7 +1,7 @@
 {
-  "mobile": 360,
-  "tablet": 720,
-  "desktop-sm": 1024,
-  "desktop-md": 1444,
-  "desktop-lg": 1920
+  "mobile": "360px",
+  "tablet": "720px",
+  "desktop-sm": "1024px",
+  "desktop-md": "1444px",
+  "desktop-lg": "1920px"
 }
