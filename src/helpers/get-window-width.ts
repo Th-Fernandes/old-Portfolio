@@ -1,10 +1,13 @@
+import type { Dispatch, SetStateAction } from "react";
+
 export const windowWidth = {
   get() {
     return window.innerWidth;
   },
 
-  changeHeaderRenderByResize(setState:any) {
-    const screenWidth = this.debounce(() => setState(window.innerWidth));
+  changeHeaderRenderByResize(setState:Dispatch<SetStateAction<number>>) {
+    const screenWidth = this.debounce(() => setState(this.get()));
+    
     window.addEventListener('resize', screenWidth);
   },
 

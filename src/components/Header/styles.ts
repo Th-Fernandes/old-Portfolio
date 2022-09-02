@@ -11,6 +11,7 @@ export const HeaderContainer = styled.header`
 
   @media (min-width: ${breakpoints["desktop-sm"]}) {
     padding-top: 4rem;
+    padding-inline: min(12.5%, 18rem);
   }
 
   #backLandingPageLink {

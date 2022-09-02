@@ -1,7 +1,7 @@
-import Link from "next/link";
+import { NextLink } from "components/Next/Link";
 import { List, X } from "phosphor-react";
 import type { Dispatch, SetStateAction } from "react";
-import navLinks from "./navLinks.json";
+import navLinks from "components/Header/Nav/navLinks.json";
 import { MobileNavContainer } from "./styles";
 
 interface NavLinks {
@@ -30,9 +30,7 @@ export function NavMobile({ isMobileNavOpened, setIsMobileNavOpened }: Props) {
             {
               navLinks.map(({ name, id }: NavLinks) => (
                 <li key={id} className="mobile-nav-link">
-                  <Link href="/">
-                    <a>{name}</a>
-                  </Link>
+                  <NextLink href="/">{name}</NextLink>
                 </li>
               ))
             }

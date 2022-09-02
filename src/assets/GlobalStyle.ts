@@ -82,6 +82,16 @@ export const GlobalStyle = createGlobalStyle`
 
   /* containers config */
   header, section, footer {
+    max-width: 144rem;
+    margin: auto;
     padding-inline: 2.4rem ;
+
+    @media (min-width: ${breakpoints.tablet}) {
+      padding-inline: 4.8rem;
+    }
+
+    @media (min-width: ${breakpoints["desktop-sm"]}) {
+    padding-inline: min(12.5%, 18rem);
+  }
   }
 `
