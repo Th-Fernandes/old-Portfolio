@@ -5,7 +5,7 @@ import {GlobalStyle} from "assets/GlobalStyle";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <GlobalStyle/>
+      <GlobalStyle/>  
       <Head>
         <title>Thiago Fernandes - Portfólio</title>
       </Head>

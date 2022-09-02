@@ -1,26 +1,35 @@
-import {List} from "phosphor-react";
-import { useState } from "react";
-import { NavMobile } from "./Nav/Mobile";
+import { useEffect, useState } from "react";
+import { NavMobile } from "components/Header/Nav/Mobile";
+import { HeaderContainer } from "./styles";
+import NavDesktop from "components/Header/Nav/Desktop";
+import { windowWidth } from "helpers/get-window-width";
 
 export function Header() {
-  const [isMobileNavOpened, setIsMobileNavOpened] = useState<boolean>(false)
+  const [isMobileNavOpened, setIsMobileNavOpened] = useState<boolean>(false);
+  const [screenWidth, setScreenWidth] = useState<number>(0);
+
+  useEffect(() => {
+    if (screenWidth === 0) {
+      const screenSize = windowWidth.get();
+      setScreenWidth(screenSize)
+    } 
+
+    windowWidth.changeHeaderRenderByResize(setScreenWidth);
+  }, [screenWidth]) 
 
   return (
-    <header>
-      <a href="#">Portfólio</a>
+    <HeaderContainer>
+      <a id="backLandingPageLink" href="#">Portfólio</a>
 
-      <List 
-        onClick={() => setIsMobileNavOpened(true)} 
-        size={48} 
-        color="#ffffff" 
-        weight="fill" 
-      />
-
-      <NavMobile 
-        isMobileNavOpened={isMobileNavOpened}
-        setIsMobileNavOpened={setIsMobileNavOpened}
-      />
+      {
+        screenWidth < 768 
+          ? <NavMobile 
+              isMobileNavOpened={isMobileNavOpened}
+              setIsMobileNavOpened={setIsMobileNavOpened}
+            />
+          : <NavDesktop/>
+      }
       
-    </header>
+    </HeaderContainer>
     );
 }

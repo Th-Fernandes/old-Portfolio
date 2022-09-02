@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { X } from "phosphor-react";
+import { List, X } from "phosphor-react";
 import type { Dispatch, SetStateAction } from "react";
 import navLinks from "./navLinks.json";
 import { MobileNavContainer } from "./styles";
@@ -17,6 +17,12 @@ interface Props {
 export function NavMobile({ isMobileNavOpened, setIsMobileNavOpened }: Props) {
   return (
     <>
+    <List 
+        onClick={() => setIsMobileNavOpened(true)} 
+        size={48} 
+        color="#ffffff" 
+        weight="fill" 
+      />
       {
         isMobileNavOpened &&
         <MobileNavContainer>

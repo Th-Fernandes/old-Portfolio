@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from "assets/colors.json"
+import colors from "assets/colors.json";
 
 export const MobileNavContainer = styled.nav`
   display: flex;

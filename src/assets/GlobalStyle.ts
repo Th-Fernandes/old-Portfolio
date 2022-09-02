@@ -79,4 +79,9 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
     border-radius: 0.5rem;
   }
+
+  /* containers config */
+  header, section, footer {
+    padding-inline: 2.4rem ;
+  }
 `
