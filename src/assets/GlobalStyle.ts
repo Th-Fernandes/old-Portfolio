@@ -64,4 +64,19 @@ export const GlobalStyle = createGlobalStyle`
       text-transform: uppercase;
     }
   }
+
+  /* LIST CONFIG */
+
+  li {
+    list-style: none;
+  }
+
+  /* button config */
+  button {
+    width: min(14.4rem, 90%);
+    min-height: 4rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5rem;
+  }
 `

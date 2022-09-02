@@ -3,23 +3,24 @@ import { useState } from "react";
 import { NavMobile } from "./Nav/Mobile";
 
 export function Header() {
-  const [isOpenMobileNavClicked, setIsOpenMobileNavClicked] = useState<boolean>()
+  const [isMobileNavOpened, setIsMobileNavOpened] = useState<boolean>(false)
 
   return (
     <header>
       <a href="#">Portfólio</a>
 
       <List 
-        onClick={() => setIsOpenMobileNavClicked(true)} 
+        onClick={() => setIsMobileNavOpened(true)} 
         size={48} 
         color="#ffffff" 
         weight="fill" 
       />
 
-      {
-        isOpenMobileNavClicked &&
-        <NavMobile />
-      }
+      <NavMobile 
+        isMobileNavOpened={isMobileNavOpened}
+        setIsMobileNavOpened={setIsMobileNavOpened}
+      />
+      
     </header>
     );
 }

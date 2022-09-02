@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { X } from "phosphor-react";
+import type { Dispatch, SetStateAction } from "react";
 import navLinks from "./navLinks.json";
 import { MobileNavContainer } from "./styles";
 
@@ -7,22 +9,35 @@ interface NavLinks {
   id: number
 }
 
-export function NavMobile() {
+interface Props {
+  isMobileNavOpened: boolean,
+  setIsMobileNavOpened: Dispatch<SetStateAction<boolean>>
+}
+
+export function NavMobile({ isMobileNavOpened, setIsMobileNavOpened }: Props) {
   return (
-    <MobileNavContainer className="mobile-nav-container">
-      <ul>
-        {
-          navLinks.map(({name, id}:NavLinks) => (
-            <li key={id}>
-              <Link href="/">
-                <a>{name}</a>
-                
-              </Link>
-              <p>test</p>
-            </li>
-          ))
-        }
-      </ul>
-    </MobileNavContainer>
-  ) 
+    <>
+      {
+        isMobileNavOpened &&
+        <MobileNavContainer>
+          <ul className="mobile-nav-links">
+            {
+              navLinks.map(({ name, id }: NavLinks) => (
+                <li key={id} className="mobile-nav-link">
+                  <Link href="/">
+                    <a>{name}</a>
+                  </Link>
+                </li>
+              ))
+            }
+          </ul>
+          <button
+            onClick={() => setIsMobileNavOpened(false)} 
+            id="closeMobileNavButton">
+            <X size={48} color="#ffffff" weight="fill" />
+          </button>
+        </MobileNavContainer>
+      }
+    </>
+  )
 }
