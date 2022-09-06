@@ -78,6 +78,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: transparent;
     border: none;
     border-radius: 0.5rem;
+    cursor: pointer;
   }
 
   /* containers config */

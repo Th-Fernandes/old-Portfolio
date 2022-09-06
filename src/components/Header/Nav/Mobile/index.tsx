@@ -19,7 +19,7 @@ export function NavMobile({ isMobileNavOpened, setIsMobileNavOpened }: Props) {
     <>
     <List 
         onClick={() => setIsMobileNavOpened(true)} 
-        size={48} 
+        size={30} 
         color="#ffffff" 
         weight="fill" 
       />

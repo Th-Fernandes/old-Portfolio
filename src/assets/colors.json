@@ -5,5 +5,9 @@
     "dark-200": "#151515",
     "light": "#FFFFFF",
     "light-gray": "#C4C4C4"
+  },
+  "gradients": {
+    "pink": "linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%)",
+    "purple": "linear-gradient(269.96deg, #10D7E2 0%, #9358F7 100%)"
   }
 }
