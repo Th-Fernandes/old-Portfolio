@@ -11,4 +11,4 @@ export const SocialMediaListContainer = styled.ul`
   @media (min-width: ${breakpoints.tablet}) {
     justify-content: left;
   }
-`
+`;

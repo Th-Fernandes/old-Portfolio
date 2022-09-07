@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import breakpoints from "assets/breakpoints.json"
+import breakpoints from 'assets/breakpoints.json';
 // import colors from 'assets/colors.json';
 
 export const SocialMediaButtonsContainer = styled.ul`
@@ -10,4 +10,4 @@ export const SocialMediaButtonsContainer = styled.ul`
   @media (min-width: ${breakpoints['desktop-sm']}) {
     margin-top: 6rem;
   }
-`
+`;

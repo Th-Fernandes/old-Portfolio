@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { NavMobile } from "components/Header/Nav/Mobile";
-import { HeaderContainer } from "./styles";
-import NavDesktop from "components/Header/Nav/Desktop";
-import { windowWidth } from "helpers/get-window-width";
+import { useEffect, useState } from 'react';
+import { NavMobile } from 'components/Header/Nav/Mobile';
+import { HeaderContainer } from './styles';
+import NavDesktop from 'components/Header/Nav/Desktop';
+import { windowWidth } from 'helpers/get-window-width';
 
 export function Header() {
   const [isMobileNavOpened, setIsMobileNavOpened] = useState<boolean>(false);
@@ -11,25 +11,26 @@ export function Header() {
   useEffect(() => {
     if (screenWidth === 0) {
       const screenSize = windowWidth.get();
-      setScreenWidth(screenSize)
-    } 
+      setScreenWidth(screenSize);
+    }
 
     windowWidth.changeHeaderRenderByResize(setScreenWidth);
-  }, [screenWidth]) 
+  }, [screenWidth]);
 
   return (
     <HeaderContainer>
-      <a id="backLandingPageLink" href="#">Portfólio</a>
+      <a id="backLandingPageLink" href="#">
+        Portfólio
+      </a>
 
-      {
-        screenWidth < 768 
-          ? <NavMobile 
-              isMobileNavOpened={isMobileNavOpened}
-              setIsMobileNavOpened={setIsMobileNavOpened}
-            />
-          : <NavDesktop/>
-      }
-      
+      {screenWidth < 768 ? (
+        <NavMobile
+          isMobileNavOpened={isMobileNavOpened}
+          setIsMobileNavOpened={setIsMobileNavOpened}
+        />
+      ) : (
+        <NavDesktop />
+      )}
     </HeaderContainer>
-    );
+  );
 }

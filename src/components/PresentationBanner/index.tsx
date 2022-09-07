@@ -1,5 +1,5 @@
-import { SocialMediaButtons } from "components/PresentationBanner/SocialMediaButtons";
-import { PresentationBannerContainer } from "./styles";
+import { SocialMediaButtons } from 'components/PresentationBanner/SocialMediaButtons';
+import { PresentationBannerContainer } from './styles';
 
 export function PresentationBanner() {
   return (
@@ -10,7 +10,7 @@ export function PresentationBanner() {
         <span className="presentationContent">DESENVOLVEDOR FRONT-END</span>
       </article>
 
-      <SocialMediaButtons/>
+      <SocialMediaButtons />
     </PresentationBannerContainer>
-  )
+  );
 }

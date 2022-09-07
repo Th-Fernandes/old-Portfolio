@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import colors from "assets/colors.json";
+import styled from 'styled-components';
+import colors from 'assets/colors.json';
 
 export const MobileNavContainer = styled.nav`
   display: flex;
@@ -7,7 +7,7 @@ export const MobileNavContainer = styled.nav`
   align-content: space-between;
   background-color: ${colors.neutrals.dark};
   position: fixed;
-  inset: 0;  
+  inset: 0;
   height: 100vh;
   padding: 1.6rem;
 
@@ -20,7 +20,7 @@ export const MobileNavContainer = styled.nav`
       }
 
       > a {
-          &:active {
+        &:active {
           color: ${colors.neutrals.light};
         }
       }
@@ -30,5 +30,4 @@ export const MobileNavContainer = styled.nav`
   #closeMobileNavButton {
     align-self: center;
   }
-`
-
+`;

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import colors from "assets/colors.json";
-import breakpoints from "assets/breakpoints.json";
+import colors from 'assets/colors.json';
+import breakpoints from 'assets/breakpoints.json';
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
   p {
     font-size: 1.4rem;
     font-weight: 300;
-    color: ${colors.neutrals["light-gray"]};
+    color: ${colors.neutrals['light-gray']};
     line-height: 3.2rem;
 
     @media (min-width: ${breakpoints.tablet}) {
@@ -58,7 +58,7 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 500;
     line-height: 2.1rem;
     text-decoration: none;
-    color: ${colors.neutrals["light-gray"]};
+    color: ${colors.neutrals['light-gray']};
 
     &::first-letter {
       text-transform: uppercase;
@@ -82,6 +82,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   /* containers config */
+  
+  // default container
   header, section, footer {
     max-width: 144rem;
     margin: auto;
@@ -91,8 +93,25 @@ export const GlobalStyle = createGlobalStyle`
       padding-inline: 4.8rem;
     }
 
-    @media (min-width: ${breakpoints["desktop-sm"]}) {
+    @media (min-width: ${breakpoints['desktop-sm']}) {
     padding-inline: min(12.5%, 18rem);
+    }
   }
+
+  // div as container (é preciso resetar as configurações padrão do container (max-width, margin, padding))
+  header, section, footer {
+    .__global-container {
+      max-width: 144rem;
+    margin: auto;
+    padding-inline: 2.4rem ;
+
+    @media (min-width: ${breakpoints.tablet}) {
+      padding-inline: 4.8rem;
+    }
+
+    @media (min-width: ${breakpoints['desktop-sm']}) {
+    padding-inline: min(12.5%, 18rem);
+    }
+    }
   }
-`
+`;

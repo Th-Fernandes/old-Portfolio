@@ -1,11 +1,11 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import {GlobalStyle} from "assets/GlobalStyle";
+import { GlobalStyle } from 'assets/GlobalStyle';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <GlobalStyle/>  
+      <GlobalStyle />
       <Head>
         <title>Thiago Fernandes - Portfólio</title>
       </Head>
