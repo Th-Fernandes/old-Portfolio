@@ -4,6 +4,7 @@ import colors from 'assets/colors.json';
 
 interface Props {
   borderGradient: 'purple' | 'pink';
+  width?: { mobile: string; desktop: string };
 }
 
 export const GradientButtonContainer = styled.button<Props>`
@@ -11,7 +12,7 @@ export const GradientButtonContainer = styled.button<Props>`
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  width: min(35vw, 14.4rem);
+  width: ${(props) => props?.width?.mobile || 'min(35vw, 14.4rem)'};
   height: 4rem;
   color: ${colors.neutrals.light};
   font-weight: 600;
@@ -20,6 +21,6 @@ export const GradientButtonContainer = styled.button<Props>`
   border-image-slice: 1;
 
   @media (min-width: ${breakpoints['desktop-sm']}) {
-    width: 15.3rem;
+    width: ${(props) => props?.width?.desktop || '15.3rem'};
   }
 `;

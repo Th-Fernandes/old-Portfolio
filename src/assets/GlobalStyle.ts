@@ -49,6 +49,10 @@ export const GlobalStyle = createGlobalStyle`
     @media (min-width: ${breakpoints.tablet}) {
       font-size: 2rem;
     }
+
+    @media (min-width: ${breakpoints['desktop-sm']}) {
+      font-size: 2.4rem;
+    }
   }
 
   /* LINK CONFIG */
@@ -88,13 +92,17 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 144rem;
     margin: auto;
     padding-inline: 2.4rem ;
+    padding-block: 4rem;
+    
 
     @media (min-width: ${breakpoints.tablet}) {
       padding-inline: 4.8rem;
+      padding-block: 6rem;
     }
 
     @media (min-width: ${breakpoints['desktop-sm']}) {
     padding-inline: min(12.5%, 18rem);
+    padding-block: 10rem;
     }
   }
 
@@ -102,16 +110,19 @@ export const GlobalStyle = createGlobalStyle`
   header, section, footer {
     .__global-container {
       max-width: 144rem;
-    margin: auto;
-    padding-inline: 2.4rem ;
+      margin: auto;
+      padding-inline: 2.4rem ;
+      padding-block: 4rem;
 
-    @media (min-width: ${breakpoints.tablet}) {
-      padding-inline: 4.8rem;
-    }
+      @media (min-width: ${breakpoints.tablet}) {
+        padding-inline: 4.8rem;
+        padding-block: 6rem;
+      }
 
-    @media (min-width: ${breakpoints['desktop-sm']}) {
-    padding-inline: min(12.5%, 18rem);
-    }
-    }
+      @media (min-width: ${breakpoints['desktop-sm']}) {
+      padding-inline: min(12.5%, 18rem);
+      padding-block: 10rem;
+      }
+      }
   }
 `;
