@@ -14,6 +14,7 @@ const Home: NextPage = () => {
         <AboutMe />
         <Repositories />
       </main>
+
     </>
   );
 };

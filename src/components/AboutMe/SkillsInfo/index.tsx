@@ -1,4 +1,5 @@
 import { GradientButton } from 'components/GradientButton';
+import { NextLink } from 'components/Next/Link';
 import { EnvelopeSimple, FileArrowDown } from 'phosphor-react';
 import { SkillsInfoContainer } from './styles';
 
@@ -8,10 +9,12 @@ export function SkillsInfo() {
       id: 1,
       Component() {
         return (
-          <GradientButton borderGradient="pink">
-            <FileArrowDown size={25} color="#ffffff" />
-            <span>Currículo</span>
-          </GradientButton>
+          <NextLink href='/curriculo.pdf' download={true}>
+            <GradientButton borderGradient="pink">
+              <FileArrowDown size={25} color="#ffffff" />
+              <span>Currículo</span>
+            </GradientButton>
+          </NextLink>
         );
       },
     },
