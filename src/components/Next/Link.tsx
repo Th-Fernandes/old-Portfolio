@@ -5,12 +5,13 @@ interface Props {
   children: ReactNode;
   href: string;
   download?: true;
+  title?: string;
 }
 
-export function NextLink({ children, href, download }: Props) {
+export function NextLink({ children, href, download, title }: Props) {
   return (
     <Link href={href} >
-      <a target="blank" download={download}>{children}</a>
+      <a target="blank" download={download} title={title}>{children}</a>
     </Link>
   );
 }

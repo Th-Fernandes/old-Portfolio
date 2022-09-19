@@ -22,10 +22,12 @@ export function SkillsInfo() {
       id: 2,
       Component() {
         return (
-          <GradientButton borderGradient="purple">
-            <EnvelopeSimple size={25} color="#ffffff" />
-            <span>Email</span>
-          </GradientButton>
+          <NextLink href="mailto:thiagojfcarvalho@gmail.com" title='thiagojfcarvalho@gmail.com' >
+            <GradientButton borderGradient="purple" >
+              <EnvelopeSimple  size={25} color="#ffffff" />
+              <span >Email</span>
+            </GradientButton>
+          </NextLink>
         );
       },
     },
