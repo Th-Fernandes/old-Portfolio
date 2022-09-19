@@ -1,5 +1,6 @@
 import { Repository } from './Repository';
 import { RepositoryContainer } from './styles';
+import repositories from "./repositories.json";
 
 export function Repositories() {
   return (
@@ -7,9 +8,14 @@ export function Repositories() {
       <h2>Projetos</h2>
 
       <ul>
-        {[1, 2, 3, 4].map((el) => (
-          <li key={el}>
-            <Repository />
+        {repositories.map((repository) => (
+          <li key={repository.id}>
+            <Repository  
+              name={repository.name}
+              thumb={repository.thumb}
+              description={repository.description}
+              link={repository.link}
+            />
           </li>
         ))}
       </ul>

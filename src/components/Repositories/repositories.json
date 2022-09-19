@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "NLW eSports",
+    "thumb": "/img/repositories/nlw-esports.svg",
+    "description": "Encontre um duo (parceiro(a) para jogar). Aplicação web, back-end e mobile. ",
+    "link": "https://github.com/Th-Fernandes/NLW-ESPORTS-WEB"
+  },
+  {
+    "id": 2,
+    "name": "AluraGeek",
+    "thumb": "/img/repositories/alurageek.svg",
+    "description": "E-commerce do mundo geek. Crie um conta e anuncie seus produtos.",
+    "link": "https://github.com/Th-Fernandes/AluraGeek"
+  },
+  {
+    "id": 3,
+    "name": "Wassup Messenger",
+    "thumb": "/img/repositories/wassup-messenger.svg",
+    "description": "Um mensageiro para a web. Converse em tempo real com diferentes usuários.",
+    "link": "https://github.com/Th-Fernandes/Wassup-messenger"
+  },
+  {
+    "id": 4,
+    "name": "Aluroni",
+    "thumb": "/img/repositories/aluroni.svg",
+    "description": "A pizzaria mais famosa do Brasil! filtre seu pedido através da plataforma.",
+    "link": "https://github.com/Th-Fernandes/aluroni"
+  }
+]

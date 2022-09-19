@@ -11,7 +11,7 @@ export const RepositoryContainer = styled.div`
   }
 
   .repository__description {
-    line-height: 1.8rem;
+    line-height: 2.5rem;
     margin-bottom: 0.8rem;
   }
 

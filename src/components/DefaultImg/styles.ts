@@ -13,7 +13,7 @@ export const DefaultImgContainer = styled.div<Props>`
   /* height: ${(props) => props.height + 'px'}; */
   border-left: 5px solid ${colors.brand};
   border-radius: 0.4rem;
-  background-color: ${colors.neutrals['dark']};
+  background-color: #181818;
 
   .img {
     display: block;
