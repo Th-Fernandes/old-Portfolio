@@ -9,7 +9,7 @@ export function SocialMediaButtons() {
       id: 1,
       Component() {
         return (
-          <NextLink href='https://www.linkedin.com/in/thiago-fernandes-front/'>
+          <NextLink href='https://www.linkedin.com/in/thiago-fernandes-front/' target='blank'>
             <GradientButton borderGradient="purple">
               <LinkedinLogo size={25} color="#ffffff" weight="regular" />
               <span>LinkedIn</span>
@@ -22,7 +22,7 @@ export function SocialMediaButtons() {
       id: 2,
       Component() {
         return (
-          <NextLink href='https://github.com/Th-Fernandes'>
+          <NextLink href='https://github.com/Th-Fernandes' target='blank'>
               <GradientButton borderGradient="pink">
                 <GithubLogo size={25} color="#ffffff" weight="regular" />
                 <span>Github</span>

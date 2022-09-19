@@ -6,12 +6,18 @@ interface Props {
   href: string;
   download?: true;
   title?: string;
+  target?: "blank"
 }
 
-export function NextLink({ children, href, download, title }: Props) {
+export function NextLink({ children, href, target, download, title }: Props) {
   return (
     <Link href={href} >
-      <a target="blank" download={download} title={title}>{children}</a>
+      <a 
+        target={target} 
+        download={download} 
+        title={title}>
+          {children}
+      </a>
     </Link>
   );
 }

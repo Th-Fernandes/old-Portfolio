@@ -9,7 +9,7 @@ export function SkillsInfo() {
       id: 1,
       Component() {
         return (
-          <NextLink href='/curriculo.pdf' download={true}>
+          <NextLink href='/thiago-fernandes-curriculo.pdf' download={true} target="blank">
             <GradientButton borderGradient="pink">
               <FileArrowDown size={25} color="#ffffff" />
               <span>Currículo</span>
