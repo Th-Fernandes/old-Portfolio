@@ -11,7 +11,7 @@ const Home: NextPage = () => {
 
       <main>
         <PresentationBanner />
-        <AboutMe />
+        <AboutMe hasHugeSpacing />
         <Repositories />
       </main>
 

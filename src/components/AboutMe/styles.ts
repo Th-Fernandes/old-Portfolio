@@ -2,11 +2,15 @@ import styled from 'styled-components';
 import breakpoints from 'assets/breakpoints.json';
 import colors from 'assets/colors.json';
 
-export const AboutMeContainer = styled.section`
+interface Props {
+  hasHugeSpacing: boolean
+}
+
+export const AboutMeContainer = styled.section<Props>`
   max-width: 100%;
   min-height: 36.2rem;
   padding: 0;
-  margin-top: 5.6rem;
+  margin-top: ${props => props.hasHugeSpacing ? '5.6rem' : 0};
   padding-block: 4rem;
   background-color: ${colors.neutrals['dark-200']};
 
@@ -14,7 +18,7 @@ export const AboutMeContainer = styled.section`
     @media (min-width: ${breakpoints['desktop-md']}) {
       display: flex;
       justify-content: space-between;
-      padding-block: 10rem;
+      padding-block: ${props => props.hasHugeSpacing ? '10rem' : 0}
     }
 
     .dev-picture {

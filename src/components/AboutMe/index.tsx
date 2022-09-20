@@ -3,9 +3,13 @@ import { SkillsInfo } from './SkillsInfo';
 import { SocialMediaList } from './SocialMediaList';
 import { AboutMeContainer } from './styles';
 
-export function AboutMe() {
+interface Props {
+  hasHugeSpacing: boolean
+}
+
+export function AboutMe({hasHugeSpacing}:Props) {
   return (
-    <AboutMeContainer>
+    <AboutMeContainer hasHugeSpacing={hasHugeSpacing}>
       <div className="__global-container">
         <div className="dev-picture">
           <Image
