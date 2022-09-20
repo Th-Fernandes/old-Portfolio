@@ -8,8 +8,7 @@ import { useEffect, useState } from "react";
 import { windowWidth } from "helpers/get-window-width";
 
 const AboutMePage: NextPage = () => {
-  const {used, learning} = techsUrl;
-
+  const techsTitle = ['Tecnologias que utilizo', 'Tecnologias que estou aprendendo'];
   const [screenWidth, setScreenWidth] = useState<number>(0);
   const [techsImgSize, setTechsImgSize] = useState<number>(40);
 
@@ -18,9 +17,9 @@ const AboutMePage: NextPage = () => {
 
     windowWidth.changeRenderByResize(setScreenWidth);
 
-    if(screenSize >= 768) return setTechsImgSize(120);
+    if (screenSize >= 768) return setTechsImgSize(120);
     setTechsImgSize(40);
-    
+
   }, [screenWidth]);
 
   return (
@@ -28,43 +27,31 @@ const AboutMePage: NextPage = () => {
       <Header />
 
       <main>
-        <AboutMe/>
+        <AboutMe />
 
         <section>
-          <Techs title="Tecnologias que utilizo" gridColumnsSize={techsImgSize}>
-            <div>
-              {
-                used.map(({id, title, url}) => (
-                  <Image 
-                    key={id} 
-                    src={url} 
-                    title={title} 
-                    width={techsImgSize}
-                    height={techsImgSize}
-                    alt={title}
-                  />
-                ))
-              }
-            </div>
-          </Techs>
+          {
+            techsTitle.map((el, index) => {
+              const techsInfo = index === 0 ? techsUrl.used : techsUrl.learning;
 
-          <Techs title="Tecnologias que estou aprendendo" gridColumnsSize={techsImgSize}>
-           <div>
-            {
-              learning.map(({id, title, url}) => (
-                <Image 
-                  key={id} 
-                  src={url} 
-                  title={title} 
-                  width={techsImgSize}
-                  height={techsImgSize}
-                  alt={title}
-                />
-              ))
-            }
-           </div>
-          </Techs>
-
+              return (
+                <Techs key={el} title={el} gridColumnsSize={techsImgSize}>
+                  {
+                    techsInfo.map(({ id, title, url }) => (
+                      <Image
+                        key={id}
+                        src={url}
+                        title={title}
+                        width={techsImgSize}
+                        height={techsImgSize}
+                        alt={title}
+                      />
+                    ))
+                  }
+                </Techs>
+              )
+            })
+          }
           <div>
             <h2>Entre em contato</h2>
 

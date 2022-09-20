@@ -8,11 +8,16 @@ interface props {
 export const TechsContainer = styled.div<props>`
   margin-bottom: 4rem;
 
-  > h2 {
+  > .techs-title {
     margin-bottom: 1.2rem;
+
+    @media (min-width: ${breakpoints['desktop-sm']}) {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
   }
 
-  > div {
+  > .techs-img-container {
     display: grid;
     grid-template-columns: repeat(6, ${props => props.gridColumnsSize}px);
     gap: 2rem;

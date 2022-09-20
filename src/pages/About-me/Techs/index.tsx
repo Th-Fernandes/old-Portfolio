@@ -10,9 +10,11 @@ interface Props {
 export function Techs({title, children, gridColumnsSize}: Props) {
   return (
     <TechsContainer gridColumnsSize={gridColumnsSize}>
-      <h2>{title}</h2>
+      <h2 className="techs-title">{title}</h2>
 
-      {children}
+      <div className="techs-img-container">
+        {children}
+      </div>
     </TechsContainer>
   )
 }
