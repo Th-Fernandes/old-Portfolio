@@ -1,4 +1,4 @@
-import { SocialMediaButtons } from 'components/PresentationBanner/SocialMediaButtons';
+import { SocialMediaButtons } from 'pages/Home/PresentationBanner/SocialMediaButtons';
 import { PresentationBannerContainer } from './styles';
 
 export function PresentationBanner() {

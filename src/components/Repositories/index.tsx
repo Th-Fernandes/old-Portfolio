@@ -2,13 +2,20 @@ import { Repository } from './Repository';
 import { RepositoryContainer } from './styles';
 import repositories from "./repositories.json";
 
-export function Repositories() {
+interface Props {
+  quantity?: number
+}
+
+export function Repositories({quantity}:Props) {
+  let setRepositories = [...repositories];
+  setRepositories = repositories.slice(0, quantity);
+
   return (
     <RepositoryContainer>
       <h2>Projetos</h2>
 
       <ul>
-        {repositories.map((repository) => (
+        {setRepositories.map((repository) => (
           <li key={repository.id}>
             <Repository  
               name={repository.name}

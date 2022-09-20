@@ -1,5 +1,6 @@
 import type { NextPage } from "next"
 import { Header } from "components/Header";
+import { Repositories } from "components/Repositories";
 
 const ProjectsPage: NextPage = () => {
   return (
@@ -7,7 +8,7 @@ const ProjectsPage: NextPage = () => {
       <Header />
 
       <main>
-
+        <Repositories />
       </main>
     </>
   )

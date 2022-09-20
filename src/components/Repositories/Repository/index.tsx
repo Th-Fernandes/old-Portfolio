@@ -17,7 +17,7 @@ export function Repository({name, thumb, description, link }: Props) {
         src={thumb}
         width={312}
         height={130}
-        alt="lkkkkk"
+        alt={name}
       />
 
       <h3 className="repository__name">{name || 'Nome do projeto'}</h3>

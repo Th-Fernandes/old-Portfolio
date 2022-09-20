@@ -26,5 +26,12 @@
     "thumb": "/img/repositories/aluroni.svg",
     "description": "A pizzaria mais famosa do Brasil! filtre seu pedido através da plataforma.",
     "link": "https://github.com/Th-Fernandes/aluroni"
+  },
+  {
+    "id": 5,
+    "name": "AluraDev",
+    "thumb": "/img/repositories/alura-dev.svg",
+    "description": "Compartilhe seu código com outros devs com a plataforma aluraDev!",
+    "link": "https://github.com/Th-Fernandes/aluraDev-frontendChallenge"
   }
 ]
