@@ -1,14 +1,17 @@
 [
   {
+    "id": 1,
     "name": "Home",
-    "id": 1
+    "path": "/"
   },
   {
+    "id": 2,
     "name": "Sobre mim",
-    "id": 2
+    "path": "/about-me"
   },
   {
+    "id": 3,
     "name": "Projetos",
-    "id": 3
+    "path": "/projects"
   }
 ]

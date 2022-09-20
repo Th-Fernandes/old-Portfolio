@@ -1,0 +1,50 @@
+{
+  "used": [
+    {
+      "id": 1,
+      "title": "React",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+    },
+  
+    {
+      "id": 2,
+      "title": "Next.js",
+      "url": "https://blog.bywachira.com/nextjs.png"
+    },
+  
+    {
+      "id": 3,
+      "title": "javascript",
+      "url":"https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" 
+    },
+    {
+      "id": 4,
+      "title": "HTML",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+    },
+    {
+      "id": 5,
+      "title": "CSS",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+    },
+    {
+      "id": 6,
+      "title": "SASS",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+    }
+  ],
+
+  "learning": [
+    {
+      "id": 1,
+      "title": "typescript",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+    },
+
+    {
+      "id": 2,
+      "title": "NodeJs",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+    }
+  ]
+}

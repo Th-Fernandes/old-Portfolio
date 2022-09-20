@@ -5,7 +5,7 @@ export const windowWidth = {
     return window.innerWidth;
   },
 
-  changeHeaderRenderByResize(setState: Dispatch<SetStateAction<number>>) {
+  changeRenderByResize(setState: Dispatch<SetStateAction<number>>) {
     const screenWidth = this.debounce(() => setState(this.get()));
 
     window.addEventListener('resize', screenWidth);

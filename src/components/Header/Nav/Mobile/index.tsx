@@ -5,8 +5,9 @@ import navLinks from 'components/Header/Nav/navLinks.json';
 import { MobileNavContainer } from './styles';
 
 interface NavLinks {
-  name: string;
   id: number;
+  name: string;
+  path: string
 }
 
 interface Props {
@@ -26,9 +27,9 @@ export function NavMobile({ isMobileNavOpened, setIsMobileNavOpened }: Props) {
       {isMobileNavOpened && (
         <MobileNavContainer>
           <ul className="mobile-nav-links">
-            {navLinks.map(({ name, id }: NavLinks) => (
+            {navLinks.map(({id, name, path }: NavLinks) => (
               <li key={id} className="mobile-nav-link">
-                <NextLink href="/">{name}</NextLink>
+                <NextLink href={path}>{name}</NextLink>
               </li>
             ))}
           </ul>

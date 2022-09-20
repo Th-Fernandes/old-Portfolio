@@ -15,13 +15,17 @@ export const MobileNavContainer = styled.nav`
     flex-grow: 1;
 
     .mobile-nav-link {
+      
       &:not(:last-child) {
-        margin-bottom: 0.8rem;
+        margin-bottom: 2.4rem;
       }
 
       > a {
+        text-align: center;
+        font-size: 2.4rem;
+        
         &:active {
-          color: ${colors.neutrals.light};
+          color: ${colors.brand};
         }
       }
     }

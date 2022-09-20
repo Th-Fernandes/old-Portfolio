@@ -14,7 +14,7 @@ export function Header() {
       setScreenWidth(screenSize);
     }
 
-    windowWidth.changeHeaderRenderByResize(setScreenWidth);
+    windowWidth.changeRenderByResize(setScreenWidth);
   }, [screenWidth]);
 
   return (
@@ -23,14 +23,14 @@ export function Header() {
         Portfólio
       </a>
 
-      {screenWidth < 768 ? (
-        <NavMobile
-          isMobileNavOpened={isMobileNavOpened}
-          setIsMobileNavOpened={setIsMobileNavOpened}
-        />
-      ) : (
-        <NavDesktop />
-      )}
+      {
+        screenWidth < 768 
+          ? <NavMobile
+              isMobileNavOpened={isMobileNavOpened}
+              setIsMobileNavOpened={setIsMobileNavOpened}
+            /> 
+          : <NavDesktop />    
+      }
     </HeaderContainer>
   );
 }
