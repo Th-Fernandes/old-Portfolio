@@ -4,34 +4,39 @@
     "name": "NLW eSports",
     "thumb": "/img/repositories/nlw-esports.svg",
     "description": "Encontre um duo (parceiro(a) para jogar). Aplicação web, back-end e mobile. ",
-    "link": "https://github.com/Th-Fernandes/NLW-ESPORTS-WEB"
+    "link": "https://github.com/Th-Fernandes/NLW-ESPORTS-WEB",
+    "techs": ["Vite", "typescript", "tailwind", "radix", "axios", "prisma", "Express", "React native", "Expo"]
   },
   {
     "id": 2,
     "name": "AluraGeek",
     "thumb": "/img/repositories/alurageek.svg",
     "description": "E-commerce do mundo geek. Crie um conta e anuncie seus produtos.",
-    "link": "https://github.com/Th-Fernandes/AluraGeek"
+    "link": "https://github.com/Th-Fernandes/AluraGeek",
+    "techs": ["Next", "React", "Styled Components", "Supabase"]
   },
   {
     "id": 3,
     "name": "Wassup Messenger",
     "thumb": "/img/repositories/wassup-messenger.svg",
     "description": "Um mensageiro para a web. Converse em tempo real com diferentes usuários.",
-    "link": "https://github.com/Th-Fernandes/Wassup-messenger"
+    "link": "https://github.com/Th-Fernandes/Wassup-messenger",
+    "techs": ["Next", "Supabase"]
   },
   {
     "id": 4,
     "name": "Aluroni",
     "thumb": "/img/repositories/aluroni.svg",
     "description": "A pizzaria mais famosa do Brasil! filtre seu pedido através da plataforma.",
-    "link": "https://github.com/Th-Fernandes/aluroni"
+    "link": "https://github.com/Th-Fernandes/aluroni",
+    "techs": ["Typescript", "SCSS", "React Router"]
   },
   {
     "id": 5,
     "name": "AluraDev",
     "thumb": "/img/repositories/alura-dev.svg",
     "description": "Compartilhe seu código com outros devs com a plataforma aluraDev!",
-    "link": "https://github.com/Th-Fernandes/aluraDev-frontendChallenge"
+    "link": "https://github.com/Th-Fernandes/aluraDev-frontendChallenge",
+    "techs": ["Javascript", "SCSS", "HTML"]
   }
 ]

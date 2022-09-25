@@ -19,5 +19,22 @@ export const RepositoryContainer = styled.div`
     font-weight: 500;
     color: ${colors.brand};
     margin-bottom: 3.2rem;
+    max-width: 100%;
+
+    summary {
+      margin-bottom: 1rem;
+      cursor: pointer;
+      max-width: 30rem;
+    }
+
+    &__tech {
+      display: inline-block;
+      background-image: ${colors.gradients.purple};
+      margin-bottom: 0.8rem;
+      margin-right: 1.2rem;
+      border-radius: 1.6rem;
+      padding-inline: 1.2rem;
+      color: ${colors.neutrals.light}
+    }
   }
 `;

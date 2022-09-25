@@ -22,6 +22,7 @@ export function Repositories({quantity}:Props) {
               thumb={repository.thumb}
               description={repository.description}
               link={repository.link}
+              techs={repository.techs}
             />
           </li>
         ))}
