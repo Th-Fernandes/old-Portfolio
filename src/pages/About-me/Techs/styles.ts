@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import breakpoints from 'assets/breakpoints.json'; 
+import { fadeIn } from 'assets/GlobalStyle';
 
 interface props {
   gridColumnsSize: number
@@ -7,6 +8,7 @@ interface props {
 
 export const TechsContainer = styled.div<props>`
   margin-bottom: 4rem;
+  animation: ${fadeIn} 1s ease-in-out ;
 
   > .techs-title {
     margin-bottom: 1.2rem;

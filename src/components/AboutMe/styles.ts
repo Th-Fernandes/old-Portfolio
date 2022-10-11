@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import breakpoints from 'assets/breakpoints.json';
 import colors from 'assets/colors.json';
+import { fadeIn } from 'assets/GlobalStyle';
 
 interface Props {
   hasHugeSpacing: boolean
@@ -13,6 +14,7 @@ export const AboutMeContainer = styled.section<Props>`
   margin-top: ${props => props.hasHugeSpacing ? '5.6rem' : 0};
   padding-block: 4rem;
   background-color: ${colors.neutrals['dark-200']};
+  animation: ${fadeIn} 2s ease-in-out;
 
   .__global-container {
     @media (min-width: ${breakpoints['desktop-md']}) {

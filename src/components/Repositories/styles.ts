@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import breakpoints from 'assets/breakpoints.json';
-// import colors from 'assets/colors.json';
+import { fadeIn } from 'assets/GlobalStyle';
 
 export const RepositoryContainer = styled.section`
   > h2 {
@@ -23,6 +23,7 @@ export const RepositoryContainer = styled.section`
     }
 
     > li {
+      animation: 0.75s ${fadeIn} ease-in-out;
       @media (min-width: ${breakpoints['desktop-sm']}) {
         max-width: 52rem;
         width: calc(50% - 2rem);

@@ -9,7 +9,7 @@ interface Props {
 
 export function AboutMe({hasHugeSpacing}:Props) {
   return (
-    <AboutMeContainer hasHugeSpacing={hasHugeSpacing}>
+    <AboutMeContainer hasHugeSpacing={hasHugeSpacing} >
       <div className="__global-container">
         <div className="dev-picture">
           <Image
