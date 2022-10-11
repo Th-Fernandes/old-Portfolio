@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import breakpoints from 'assets/breakpoints.json';
 import colors from 'assets/colors.json';
+import { fadeIn } from 'assets/GlobalStyle';
+
 
 export const PresentationBannerContainer = styled.section`
   margin-top: 5.6rem;
+  animation: 0.75s ${fadeIn} ease-in;
 
   @media (min-width: ${breakpoints['desktop-sm']}) {
     display: flex;
@@ -19,10 +22,12 @@ export const PresentationBannerContainer = styled.section`
   }
 
   > article {
+
     .presentationContent {
       display: block;
       font-weight: 600;
       font-size: clamp(1.6rem, 3vw, 2.4rem);
+      
 
       &:not(:last-child) {
         margin-bottom: 0.8rem;

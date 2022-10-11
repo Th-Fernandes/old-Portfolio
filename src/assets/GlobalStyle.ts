@@ -1,6 +1,16 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, keyframes } from 'styled-components';
 import colors from 'assets/colors.json';
 import breakpoints from 'assets/breakpoints.json';
+
+export const fadeIn = keyframes`
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+`;
 
 export const GlobalStyle = createGlobalStyle`
   * {

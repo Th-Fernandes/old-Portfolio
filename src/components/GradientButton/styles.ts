@@ -13,16 +13,17 @@ export const GradientButtonContainer = styled.button<Props>`
   align-items: center;
   gap: 1.5rem;
   width: ${(props) => props?.width?.mobile || 'min(35vw, 14.4rem)'};
+  max-width: ${(props) => props?.width?.desktop};
   height: 4rem;
   color: ${colors.neutrals.light};
   font-weight: 600;
   border: 2px transparent solid;
   border-image: ${(props) => colors.gradients[props.borderGradient]};
   border-image-slice: 1;
-  max-width: ${(props) => props?.width?.desktop};
+  transition: 0.5s ease all;
 
   &:hover {
-    background: ${props => colors.gradients[props.borderGradient]} ;
+    background: ${props => colors.gradients[props.borderGradient]}
   }
 
   @media (min-width: ${breakpoints['desktop-sm']}) {
@@ -30,5 +31,5 @@ export const GradientButtonContainer = styled.button<Props>`
   }
 
 
-  
 `;
+
