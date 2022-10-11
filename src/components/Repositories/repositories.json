@@ -9,20 +9,21 @@
   },
   {
     "id": 2,
+    "name": "Wassup Messenger",
+    "thumb": "/img/repositories/wassup-messenger.svg",
+    "description": "Um mensageiro para multiplataforma (web e mobile). Converse em tempo real com diferentes usuários.",
+    "link": "https://github.com/Th-Fernandes/Wassup-messenger",
+    "techs": ["Next", "typescript", "tailwind", "Expo", "Supabase"]
+  },
+  {
+    "id": 3,
     "name": "AluraGeek",
     "thumb": "/img/repositories/alurageek.svg",
     "description": "E-commerce do mundo geek. Crie um conta e anuncie seus produtos.",
     "link": "https://github.com/Th-Fernandes/AluraGeek",
     "techs": ["Next", "React", "Styled Components", "Supabase"]
   },
-  {
-    "id": 3,
-    "name": "Wassup Messenger",
-    "thumb": "/img/repositories/wassup-messenger.svg",
-    "description": "Um mensageiro para a web. Converse em tempo real com diferentes usuários.",
-    "link": "https://github.com/Th-Fernandes/Wassup-messenger",
-    "techs": ["Next", "Supabase"]
-  },
+  
   {
     "id": 4,
     "name": "Aluroni",
