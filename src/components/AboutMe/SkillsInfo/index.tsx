@@ -10,7 +10,7 @@ export function SkillsInfo() {
       Component() {
         return (
           <NextLink href='/thiago-fernandes-curriculo.pdf' download={true} target="blank">
-            <GradientButton borderGradient="pink">
+            <GradientButton>
               <FileArrowDown size={25} color="#ffffff" />
               <span>Currículo</span>
             </GradientButton>
@@ -23,9 +23,9 @@ export function SkillsInfo() {
       Component() {
         return (
           <NextLink href="mailto:thiagojfcarvalho@gmail.com" title='thiagojfcarvalho@gmail.com' >
-            <GradientButton borderGradient="purple" >
-              <EnvelopeSimple  size={25} color="#ffffff" />
-              <span >Email</span>
+            <GradientButton>
+              <EnvelopeSimple size={25} color="#ffffff" />
+              <span>Email</span>
             </GradientButton>
           </NextLink>
         );

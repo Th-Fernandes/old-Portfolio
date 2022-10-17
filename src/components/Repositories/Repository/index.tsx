@@ -44,7 +44,6 @@ export function Repository({name, thumb, description, link, techs }: Props) {
       <a href={link} target="blank">
         <GradientButton
           width={{ mobile: '100%', desktop: '18.1rem' }}
-          borderGradient="purple"
         >
           <Link size={25} color="#ffffff" />
           <span>Visualizar</span>

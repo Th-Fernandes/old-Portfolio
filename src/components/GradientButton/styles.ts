@@ -3,7 +3,6 @@ import breakpoints from 'assets/breakpoints.json';
 import colors from 'assets/colors.json';
 
 interface Props {
-  borderGradient: 'purple' | 'pink';
   width?: { mobile: string; desktop: string };
 }
 
@@ -18,12 +17,11 @@ export const GradientButtonContainer = styled.button<Props>`
   color: ${colors.neutrals.light};
   font-weight: 600;
   border: 2px transparent solid;
-  border-image: ${(props) => colors.gradients[props.borderGradient]};
-  border-image-slice: 1;
-  transition: 0.5s ease all;
+  border: 2px solid ${colors.brand};
+  transition: 0.5s ease background;
 
   &:hover {
-    background: ${props => colors.gradients[props.borderGradient]}
+    background: ${colors.brand}
   }
 
   @media (min-width: ${breakpoints['desktop-sm']}) {
