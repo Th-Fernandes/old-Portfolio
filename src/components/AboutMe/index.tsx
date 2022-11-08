@@ -4,13 +4,13 @@ import { SocialMediaList } from './SocialMediaList';
 import { AboutMeContainer } from './styles';
 
 interface Props {
-  hasHugeSpacing: boolean
+  hasHugeSpacing: boolean;
 }
 
-export function AboutMe({hasHugeSpacing}:Props) {
+export function AboutMe({ hasHugeSpacing }: Props) {
   return (
-    <AboutMeContainer hasHugeSpacing={hasHugeSpacing} >
-      <div className="__global-container">
+    <AboutMeContainer hasHugeSpacing={hasHugeSpacing}>
+      <div className="__global-container" id="aboutMe">
         <div className="dev-picture">
           <Image
             src="https://github.com/th-fernandes.png"

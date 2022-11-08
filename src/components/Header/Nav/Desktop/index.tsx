@@ -6,7 +6,7 @@ export default function NavDesktop() {
   return (
     <DesktopNavContainer>
       <ul className="desktop-nav-links">
-        {navLinks.map(({ id, name, path}) => (
+        {navLinks.map(({ id, name, path }) => (
           <li key={id} className="desktop-nav-link">
             <NextLink href={path}>{name}</NextLink>
           </li>

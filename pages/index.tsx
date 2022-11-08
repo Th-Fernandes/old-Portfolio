@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <main>
         <PresentationBanner />
         <AboutMe hasHugeSpacing />
-        <Repositories quantity={4} />
+        <Repositories quantity={5} />
       </main>
 
     </>

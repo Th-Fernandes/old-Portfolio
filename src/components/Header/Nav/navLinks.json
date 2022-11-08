@@ -7,11 +7,11 @@
   {
     "id": 2,
     "name": "Sobre mim",
-    "path": "/about-me"
+    "path": "#aboutMe"
   },
   {
     "id": 3,
     "name": "Projetos",
-    "path": "/projects"
+    "path": "/#projects"
   }
 ]
