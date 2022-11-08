@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { Header } from 'components/Header';
-import { PresentationBanner } from 'pages/Home/PresentationBanner';
+import { PresentationBanner } from 'components/PresentationBanner';
 import { AboutMe } from 'components/AboutMe';
 import { Repositories } from 'components/Repositories';
 
@@ -14,7 +14,6 @@ const Home: NextPage = () => {
         <AboutMe hasHugeSpacing />
         <Repositories quantity={5} />
       </main>
-
     </>
   );
 };
