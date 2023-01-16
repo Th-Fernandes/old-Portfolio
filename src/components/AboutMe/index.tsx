@@ -28,9 +28,8 @@ export function AboutMe({ hasHugeSpacing }: Props) {
             <p className="about-me-content__description">
               Olá! ✋🏼 Sou um desenvolvedor front-end que está sempre em busca de
               solucionar problemas através das linhas de código. Possuo
-              conhecimentos técnicos nas seguintes ferramentas: HTML, CSS e JS,
-              ReactJS, Next.js, Pré-processadores CSS e CSS-in-JS (Sass e
-              Styled-components)
+              conhecimentos técnicos nas seguintes ferramentas: Javascript,
+              ReactJS, Next.js, Sass, Styled-components, tailwind, prisma, express.
             </p>
           </article>
 

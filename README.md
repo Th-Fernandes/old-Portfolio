@@ -1,17 +1,15 @@
 <h1 align="center">
-  <img src="./src/assets/img/readme-banner.png" />
-  <p>Portfólio</p>
+  <img src="./.github/banner.png" />
 </h1>
 
 <h2> O que é esse projeto? </h2>
 
 <p> 
-  É uma aplicação com o intuito de apresentar minhas habilidades, mostrar um pouco de quem sou eu
-  e destacar os meus principais projetos de programação
+  Essa aplicação tem o intuito de centralizar em um só lugar os meus principais projetos de programação, mostrar um pouco de quem eu sou e quais habilidades possuo. Acesse o projeto através <a href="thiagofernandes.vercel.app/"> desse link.</a>
 </p>
 
 <div>
-  <h2>Ferramentas utilizadas (versão Mobile)</h2>
+  <h2>Ferramentas utilizadas</h2>
   <ul>
     <li>Typescript</li>
     <li>Styled components</li>
