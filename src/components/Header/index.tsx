@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { NavMobile } from 'components/Header/Nav/Mobile';
 import { HeaderContainer } from './styles';
 import NavDesktop from 'components/Header/Nav/Desktop';
-import { windowWidth } from 'helpers/get-window-width';
 import { useWindowDimensions } from 'hooks/useWindowDimensions';
 
 export function Header() {
@@ -20,18 +19,20 @@ export function Header() {
 
   return (
     <HeaderContainer>
-      <a id="backLandingPageLink" href="#">
-        Portfólio
-      </a>
+      <div id="headerContainer">
+        <a id="backLandingPageLink" href="#">
+          Portfólio
+        </a>
 
-      {
-        screenWidth < 768 
-          ? <NavMobile
-              isMobileNavOpened={isMobileNavOpened}
-              setIsMobileNavOpened={setIsMobileNavOpened}
-            /> 
-          : <NavDesktop />    
-      }
+        {screenWidth < 768 ? (
+          <NavMobile
+            isMobileNavOpened={isMobileNavOpened}
+            setIsMobileNavOpened={setIsMobileNavOpened}
+          />
+        ) : (
+          <NavDesktop />
+        )}
+      </div>
     </HeaderContainer>
   );
 }

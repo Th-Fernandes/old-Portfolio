@@ -98,7 +98,7 @@ export const GlobalStyle = createGlobalStyle`
   /* containers config */
   
   // default container
-  header, section, footer {
+   section, footer {
     max-width: 144rem;
     margin: auto;
     padding-inline: 2.4rem ;
@@ -115,6 +115,7 @@ export const GlobalStyle = createGlobalStyle`
     padding-block: 10rem;
     }
   }
+  
 
   // div as container (é preciso resetar as configurações padrão do container (max-width, margin, padding))
   header, section, footer {

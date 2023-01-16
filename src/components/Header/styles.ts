@@ -3,14 +3,28 @@ import breakpoints from 'assets/breakpoints.json';
 import colors from 'assets/colors.json';
 
 export const HeaderContainer = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 2.4rem;
+  position: sticky;
+  inset: 0;
+  z-index: 99999;
+  background: linear-gradient(163deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0) 100%);
+    
 
   @media (min-width: ${breakpoints['desktop-sm']}) {
     padding-top: 4rem;
     padding-inline: min(12.5%, 18rem);
+  }
+
+  #headerContainer {
+    padding-bottom: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 144rem;
+    margin: auto;
+   
+    @media (min-width: ${breakpoints['desktop-sm']}) {
+    padding-inline: min(12.5%, 18rem);
+    }
   }
 
   #backLandingPageLink {
