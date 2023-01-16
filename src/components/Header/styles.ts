@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
   inset: 0;
   z-index: 99999;
   background: linear-gradient(163deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0) 100%);
-    
+  padding: 2.4rem ;
 
   @media (min-width: ${breakpoints['desktop-sm']}) {
     padding-top: 4rem;
@@ -20,10 +20,10 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     align-items: center;
     max-width: 144rem;
-    margin: auto;
-   
+    
     @media (min-width: ${breakpoints['desktop-sm']}) {
-    padding-inline: min(12.5%, 18rem);
+      margin: auto;
+      padding-inline: min(12.5%, 18rem);
     }
   }
 

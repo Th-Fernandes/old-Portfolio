@@ -5,7 +5,7 @@ import NavDesktop from 'components/Header/Nav/Desktop';
 import { useWindowDimensions } from 'hooks/useWindowDimensions';
 
 export function Header() {
-  const [isMobileNavOpened, setIsMobileNavOpened] = useState<boolean>(false);
+ 
   const [screenWidth, setScreenWidth] = useState<number>(0);
   const { getWidth, changeRenderByResize } = useWindowDimensions();
 
@@ -25,10 +25,7 @@ export function Header() {
         </a>
 
         {screenWidth < 768 ? (
-          <NavMobile
-            isMobileNavOpened={isMobileNavOpened}
-            setIsMobileNavOpened={setIsMobileNavOpened}
-          />
+          <NavMobile/>
         ) : (
           <NavDesktop />
         )}

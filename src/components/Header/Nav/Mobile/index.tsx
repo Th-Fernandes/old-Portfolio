@@ -1,6 +1,6 @@
 import { NextLink } from 'components/Next/Link';
 import { List, X } from 'phosphor-react';
-import type { Dispatch, SetStateAction } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import navLinks from 'components/Header/Nav/navLinks.json';
 import { MobileNavContainer } from './styles';
 
@@ -10,12 +10,9 @@ interface NavLinks {
   path: string
 }
 
-interface Props {
-  isMobileNavOpened: boolean;
-  setIsMobileNavOpened: Dispatch<SetStateAction<boolean>>;
-}
+export function NavMobile() {
+  const [isMobileNavOpened, setIsMobileNavOpened] = useState<boolean>(false);
 
-export function NavMobile({ isMobileNavOpened, setIsMobileNavOpened }: Props) {
   return (
     <>
       <List
